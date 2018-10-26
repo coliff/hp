@@ -1,3 +1,1 @@
 # hp
-
-HVGC Paddle League
