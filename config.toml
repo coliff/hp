@@ -1,5 +1,5 @@
-title = "Airspace for Hugo"
-baseURL = "http://hopewellvalleypaddle.com"
+title = "Airspace"
+baseURL = "https://coliff.github.io/hp/"
 languageCode = "en-us"
 theme = "airspace-hugo"
 
