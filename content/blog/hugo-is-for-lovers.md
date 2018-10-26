@@ -5,7 +5,7 @@ tags = ["hugo"]
 title = "Hugo is for lovers"
 
 +++
-## Step 1. Install Todd
+## Step 1. Install Christian
 
 Goto [hugo releases](https://github.com/spf13/hugo/releases) and download the
 appropriate version for your os and architecture.
