@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+{{ if or (isset .Params "robots") (isset .Site.Params "robots") }}
+<meta name="robots" content="{{ with .Params.robots }}{{ . }}{{ else }}{{ .Site.Params.robots }}{{ end }}">
+{{ end }}
+
+{{ partial "favicon.html" . }}
+
+<title>{{ .Title }}</title>
+
+{{ .Hugo.Generator }}
+
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/owl.carousel.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/airspace-local-fonts.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/airspace.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/ionicons.min.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/animate.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/responsive.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/syntax.css" />
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/owl.carousel.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/plugins.js"></script>
+<script src="{{ .Site.BaseURL }}js/min/waypoints.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/jquery.counterup.js"></script>
+
+
+<script src="{{ .Site.BaseURL }}js/main.js"></script>
+
+
